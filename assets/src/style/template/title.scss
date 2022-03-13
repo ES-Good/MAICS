@@ -1,0 +1,28 @@
+.title{
+    color:#233460;
+    &_lvl-1{
+        font-size: $fz-lvl-1;
+        font-weight: 800;
+    }
+    &_lvl-2{
+        font-size: $fz-lvl-2;
+        font-weight: 800;
+    }
+    &_lvl-3{
+        font-size: $fz-lvl-3;
+    }
+    &_lvl-4{
+        font-size: $fz-lvl-4;
+        font-weight: 800;
+    }
+
+    &_s-stages{
+        font-size: 32px;
+        color: #CC9236;
+        line-height: 32px;
+
+        span{
+            color: #0F1223;
+        }
+    }
+}
