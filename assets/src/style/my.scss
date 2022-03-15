@@ -31,7 +31,7 @@ body{
 
     &_footer{
         color: #FFBD54;
-        font-size: 30px;
+        font-size: 26px;
         font-weight: 700;
     }
 }
@@ -241,20 +241,25 @@ body{
 .swiper-button-prev,
 .swiper-button-next{
     background-color: #FFBD54;
+    filter: grayscale(1);
     width: 70px;
     height: 70px;
     border-radius: 5px;
     &::after{
         color: #fff;
     }
+
+    &:hover{
+        filter: grayscale(0);
+    }
 }
 
 .swiper-button-prev{
-    left: -5%;
+    left: -7%;
 }
 
 .swiper-button-next{
-    right: -5%;
+    right: -7%;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet{
@@ -332,7 +337,9 @@ body{
 
     .title,
     .btn,
-    img{
+    img,
+    a,
+    p{
         z-index: 10;
     }
 
@@ -341,10 +348,11 @@ body{
         position: absolute;
         width: 100%;
         height: 70%;
-        background-color: #DAE2EB;
+        background-color: #dae2eb;
         border-radius: 10px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translate(-50%,-50%);
+        left: 50%;
     }
 }
 

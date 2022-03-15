@@ -6,15 +6,31 @@ $w-container: 1480px;
     }
 }
 
-@media(max-width:1400px){
+@media(max-width:1600px){
+    .phone_footer{
+        font-size: 26px;
+    }
+    .swiper-button-prev{
+        left: -5%;
+    }
     
+    .swiper-button-next{
+        right: -5%;
+    }
+    
+}
+
+@media(max-width:1400px){
+    .phone_footer{
+        font-size: 22px;
+    }
 }
 
 @media(max-width:1200px){
     img{
         width: 100%;
     }
-
+ 
     .s-instagram{
 
     }
@@ -71,7 +87,7 @@ $w-container: 1480px;
             height: 90%;
             top: auto;
             bottom: 0;
-            transform: translateY(5%);
+            transform: translate(-50%,5%);
         }
     }
 
@@ -185,6 +201,12 @@ $w-container: 1480px;
         &_lvl-4{
             font-size: $mob-fz-lvl-4;
         }
+    }
+    .s-blue-container__img{
+        width: 182px;
+    }
+    .title_webinar{
+        max-width: 300px;
     }
 }
 
