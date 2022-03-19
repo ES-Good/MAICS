@@ -24,6 +24,17 @@ $w-container: 1480px;
     .swiper-button-next{
         right: -5%;
     }
+
+    .s-cases__slide__img{
+        left: 22%;
+    }
+
+    .s-cases__slide__text-block{
+        margin-left: 40%;
+    }
+    .s-cases__slide__inner{
+        justify-content: center;
+    }
     
 }
 
@@ -41,6 +52,18 @@ $w-container: 1480px;
     .s-instagram{
 
     }
+
+    .s-cases__slide__img{
+        left: auto;
+    }
+
+    .s-cases__slide__text-block{
+        margin-left: auto;
+    }
+    .s-cases__slide__inner{
+        justify-content: flex-end;
+    }
+    
 
     .swiper-button-next, .swiper-button-prev{
         width: 42px;
@@ -115,7 +138,7 @@ $w-container: 1480px;
 
         &__slide{
             &__inner{
-                padding: 240px 10px 30px 10px !important;
+                padding: 330px 10px 30px 10px !important;
             }
             &__img{
                 top: -30px;
@@ -225,6 +248,28 @@ $w-container: 1480px;
     .btn{
         &_mobile-w100{
             max-width: 576px;
+        }
+    }
+
+    .btn-audio{
+        width: 30px;
+        height: 30px;
+        &::after{
+            border: 7px solid transparent;
+            border-left: 14px solid #fff;
+        }
+
+        &_active{
+            &::after,
+            &::before{
+                width: 5px;
+                height: 16px;
+                border: none;
+            }
+
+            &::before{
+                right: 30%;
+            }
         }
     }
 }
