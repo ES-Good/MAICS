@@ -55,7 +55,7 @@ for (let i = 0; i < btnAudio.length; i++) {
 
         }
 
-      }else{ //останавливает
+      }else{ //останавливает все остальные
 
         btnAudio[k].classList.remove('btn-audio_active');
         audio[k].pause()
@@ -63,5 +63,13 @@ for (let i = 0; i < btnAudio.length; i++) {
       }
     }
 
+  }
+}
+
+for (let i = 0; i < audio.length; i++) {
+  audio[i].onended = function () {
+    for (let i = 0; i < btnAudio.length; i++) {
+      btnAudio[i].classList.remove('btn-audio_active')
+    }
   }
 }
