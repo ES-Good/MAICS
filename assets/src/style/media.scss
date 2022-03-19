@@ -6,6 +6,13 @@ $w-container: 1480px;
     }
 }
 
+@media(min-width:1920px){
+    .s-top{
+        background-size: contain;
+    }
+}
+
+
 @media(max-width:1600px){
     .phone_footer{
         font-size: 26px;
