@@ -32,6 +32,52 @@
     }
 }
 
+.btn-audio{
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    background-color: #FFBD54;
+    border-radius: 50%;
+    border: none;
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: 70%;
+        bottom: 18px;
+        border: 10px solid transparent;
+        border-left: 18px solid #fff;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &_active{
+        &::after,
+        &::before{
+            content: '';
+            background-color: #fff;
+            width: 5px;
+            height: 20px;
+            position: absolute;
+        }
+
+        &::after{
+            left: 40%;
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            bottom: auto;
+            border: none;
+        }
+        &::before{
+            right: 35%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
 
 .register{
     display: block;

@@ -23,10 +23,10 @@
           </button>
           <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#">Этапы проекта</a>
-              <a class="nav-link" aria-current="page" href="#">Как работает</a>
-              <a class="nav-link" aria-current="page" href="#">Отзывы</a>
-              <a class="nav-link" aria-current="page" href="#">Услуги</a>
+              <a class="nav-link" aria-current="page" href="#s-stages">Этапы проекта</a>
+              <a class="nav-link" aria-current="page" href="#s-dialogues">Как работает</a>
+              <a class="nav-link" aria-current="page" href="#s-reviews">Отзывы</a>
+              <a class="nav-link" aria-current="page" href="#s-service">Услуги</a>
             </div>
             <a class="logo d-none d-lg-block" href="#" >
               <img src="img/logo-header.png" alt="">
@@ -73,7 +73,7 @@
               
             <p>Аналогов у системы на данный момент нет.</p>
   
-            <button class="btn-text mt-2 mb-5 my-xl-0">
+            <button class="btn-text mt-2 mb-5 my-xl-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Попробовать бесплатно
             </button>
         </div>
@@ -85,7 +85,7 @@
   </div>
 </div>
 
-<div class="container-fluid s-ico-grid">
+<div class="container-fluid s-ico-grid" id="s-service">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -175,7 +175,7 @@
     </div>
 </div>
 
-<div class="container-fluid s-stages">
+<div class="container-fluid s-stages" id="s-stages">
     <div class="container">
         <div class="row justify-content-around">
             <div class="col-12 col-xl-11 mb-5">
@@ -250,7 +250,7 @@
     </div>
 </div>
 
-<div class="container-fluid s-dialogues">
+<div class="container-fluid s-dialogues" id="s-dialogues">
     <div class="container">
         <div class="row flex-xl-row-reverse">
             <div class="col-12 col-xl-8 d-flex flex-wrap">
@@ -262,11 +262,26 @@
                 </div>
                 <div class="col-12 col-xl-6 d-flex flex-column justify-content-end align-items-start">
                     <p>Полностью автоматизированный процесс</p>
-                    <img src="img/s-dialogues/small-img.png" alt="">
+                    <div class="box-audio position-relative">
+                        <img src="img/s-dialogues/small-img.png" alt="">
+                        <button class="btn-audio"></button>
+
+                        <audio src="audio/1.mp3" class="audio"></audio>
+                    </div>
                 </div>
                 <div class="col-12 col-xl-6 d-flex flex-column justify-content-end align-items-end">
-                    <img src="img/s-dialogues/small-img.png" alt="" class="mt-1 mt-xl-0">
-                    <img src="img/s-dialogues/small-img.png" alt="" class="mt-1 mt-xl-5">
+                    <div class="box-audio position-relative mt-1 mt-xl-0">
+                        <img src="img/s-dialogues/small-img.png" alt="">
+                        <button class="btn-audio"></button>
+
+                        <audio src="audio/2.mp3" class="audio"></audio>
+                    </div>
+                    <div class="box-audio position-relative mt-1 mt-xl-5">
+                        <img src="img/s-dialogues/small-img.png" alt="">
+                        <button class="btn-audio"></button>
+
+                        <audio src="audio/3.mp3" class="audio"></audio>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-xl-4 d-flex justify-content-center align-items-center">
@@ -389,7 +404,7 @@
                 <p class="mt-4 mt-xl-0">
                     Приглашаем к сотрудничеству маркетинговые, рекламные и PR агентства,представителей СМИ и политтехнологов, социологов. Методологическая поддержка 24/7
                 </p>
-                <button class="btn btn_tight btn_mobile-w100 mt-4 mt-xl-0">
+                <button class="btn btn_tight btn_mobile-w100 mt-4 mt-xl-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Стать партнером
                 </button>
             </div>
@@ -404,7 +419,7 @@
                             Записаться на
                             обучающий вебинар
                         </h2>
-                        <button class="btn btn_tight ">
+                        <button class="btn btn_tight " data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Записаться
                         </button>
                     </div>
@@ -421,7 +436,7 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5" id="s-reviews">
         <div class="row justify-content-center">
             <div class="col-12 col-xl-10 mb-5">
                 <div class="title title_lvl-2">
@@ -517,13 +532,13 @@
                 </a>
             </div>
             <div class="col-12 col-xl-4 mb-4 mb-xl-0 d-flex flex-column flex-xl-row align-items-center justify-content-around">
-                <a href="" class="nav-footer mb-2 mb-xl-0">Этапы проекта</a>
-                <a href="" class="nav-footer mb-2 mb-xl-0">Как работает</a>
-                <a href="" class="nav-footer mb-2 mb-xl-0">Отзывы</a>
-                <a href="" class="nav-footer mb-2 mb-xl-0">Услуги</a>
+                <a href="#s-stages" class="nav-footer mb-2 mb-xl-0">Этапы проекта</a>
+                <a href="#s-dialogues" class="nav-footer mb-2 mb-xl-0">Как работает</a>
+                <a href="#s-reviews" class="nav-footer mb-2 mb-xl-0">Отзывы</a>
+                <a href="#s-service" class="nav-footer mb-2 mb-xl-0">Услуги</a>
             </div>
             <div class="col-12 col-xl-3">
-                <button class="btn btn_wide d-block mx-auto mx-xl-0">заказать обратный звонок</button>
+                <button class="btn btn_wide d-block mx-auto mx-xl-0" data-bs-toggle="modal" data-bs-target="#exampleModal">заказать обратный звонок</button>
             </div>
             <div class="col-12 col-xl-2 p-0 mt-3 align-items-center justify-content-center justify-content-xl-end">
                 <a href="#" class="phone phone_footer d-block text-center text-xl-end">8 (495) 191-04-47</a>
@@ -547,16 +562,18 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title title fw-700" id="exampleModalLabel">Заполните данные</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      <form action="#">
+        <div class="modal-body">
+          <input type="text" placeholder="Имя" class="input-group py-2 px-2">
+          <input type="text" placeholder="Телефон" class="input-group py-2 px-2 mt-3">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Отправить</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
