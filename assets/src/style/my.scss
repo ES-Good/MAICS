@@ -24,6 +24,13 @@ body{
     display: block;
 }
 
+.img-max-360 {
+    max-width: 360px;
+    width: 100%;
+    display: block;
+}
+
+
 .phone{
     text-decoration: none;
     font-weight: 700;
@@ -39,6 +46,23 @@ body{
         color: #FFBD54;
         font-size: 26px;
         font-weight: 700;
+    }
+}
+
+.telegramm{
+
+    &__ico{
+        fill: #8B8F9A;
+    }
+
+    &:hover &__ico{
+        fill: #FFBD54;
+    }
+
+    &_mob{
+        position: absolute;
+        right: 20px;
+        top: 5px;
     }
 }
 .s-top{

@@ -10864,6 +10864,11 @@ body {
   width: 100%;
   display: block; }
 
+.img-max-360 {
+  max-width: 360px;
+  width: 100%;
+  display: block; }
+
 .phone {
   text-decoration: none;
   font-weight: 700;
@@ -10876,6 +10881,17 @@ body {
     color: #FFBD54;
     font-size: 26px;
     font-weight: 700; }
+
+.telegramm__ico {
+  fill: #8B8F9A; }
+
+.telegramm:hover .telegramm__ico {
+  fill: #FFBD54; }
+
+.telegramm_mob {
+  position: absolute;
+  right: 20px;
+  top: 5px; }
 
 .s-top {
   background-image: url(../img/s-top/bg.svg);
