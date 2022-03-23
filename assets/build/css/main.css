@@ -11362,3 +11362,7 @@ body {
       border: none; }
     .btn-audio_active::before {
       right: 30%; } }
+
+@media (max-width: 425px) {
+  .s-cases__slide__inner {
+    padding: 93% 10px 30px 10px !important; } }
