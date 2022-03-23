@@ -11,9 +11,9 @@ var cases = new Swiper(".cases", {
       prevEl: ".cases-prev",
     },
     breakpoints:{
-        1600:{
+        1200:{
             slidesPerView: 2,
-            spaceBetween: 200
+            spaceBetween: 100
         }
     }
   });
