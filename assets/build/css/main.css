@@ -10859,6 +10859,9 @@ body {
     top: 0;
     transform: translateX(-50%); }
 
+.cabinet-link {
+  color: #233460; }
+
 .img-max-500 {
   max-width: 500px;
   width: 100%;
