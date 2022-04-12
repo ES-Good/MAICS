@@ -11306,11 +11306,15 @@ body {
     background-size: cover;
     margin-top: 50px; }
   .s-stages__card {
-    display: flex; }
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .s-stages__num-box {
     position: relative;
     left: auto;
     transform: none; }
+  .s-stages__white-box .title_lvl-3 br {
+    display: none; }
   .s-stages__white-box_card {
     padding: 5px;
     width: 80%; }
@@ -11353,18 +11357,28 @@ body {
     max-width: 120px; }
   .btn_mobile-w100 {
     max-width: 576px; }
+  .s-stages__num-box {
+    width: 46px;
+    height: 46px; }
+  .s-stages__num {
+    font-size: 30px; }
   .btn-audio {
-    width: 30px;
-    height: 30px; }
+    width: 44px;
+    height: 44px;
+    left: 5%;
+    top: 33%; }
     .btn-audio::after {
       border: 7px solid transparent;
-      border-left: 14px solid #fff; }
+      border-left: 14px solid #fff;
+      left: 65%; }
     .btn-audio_active::after, .btn-audio_active::before {
       width: 5px;
       height: 16px;
       border: none; }
     .btn-audio_active::before {
-      right: 30%; } }
+      right: 30%; }
+  .btn_footer {
+    max-width: none; } }
 
 @media (max-width: 425px) {
   .s-cases__slide__inner {

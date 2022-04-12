@@ -189,6 +189,8 @@ $w-container: 1480px;
     .s-stages{
         &__card{
             display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         &__num-box{
             position: relative;
@@ -197,6 +199,12 @@ $w-container: 1480px;
         }
 
         &__white-box{
+
+            .title_lvl-3{
+                br{
+                    display: none;
+                }
+            }
 
             &_card{
                 padding: 5px;
@@ -278,12 +286,24 @@ $w-container: 1480px;
         }
     }
 
+    .s-stages__num-box{
+        width: 46px;
+        height: 46px;
+    }
+
+    .s-stages__num{
+        font-size: 30px;
+    }
+
     .btn-audio{
-        width: 30px;
-        height: 30px;
+        width: 44px;
+        height: 44px;
+        left: 5%;
+        top: 33%;
         &::after{
             border: 7px solid transparent;
             border-left: 14px solid #fff;
+            left: 65%;
         }
 
         &_active{
@@ -297,6 +317,12 @@ $w-container: 1480px;
             &::before{
                 right: 30%;
             }
+        }
+    }
+
+    .btn{
+        &_footer{
+            max-width: none;
         }
     }
 }
