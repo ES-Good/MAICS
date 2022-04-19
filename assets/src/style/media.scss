@@ -69,6 +69,13 @@ $w-container: 1480px;
     .phone_footer{
         font-size: 22px;
     }
+
+    .s-sign{
+        &::before{
+            content: '';
+            height: 84%;
+        }
+    }
 }
 
 @media(max-width:1200px){
@@ -189,13 +196,14 @@ $w-container: 1480px;
     .s-stages{
         &__card{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
         }
         &__num-box{
             position: relative;
             left: auto;
             transform: none;
+            margin-right: 20px;
         }
 
         &__white-box{
@@ -324,6 +332,10 @@ $w-container: 1480px;
         &_footer{
             max-width: none;
         }
+    }
+
+    .title_lvl-3{
+        margin: 10px 20px;
     }
 }
 
