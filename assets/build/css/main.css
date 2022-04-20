@@ -1,5 +1,4 @@
 @import url(../../../node_modules/swiper/swiper-bundle.css);
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10789,6 +10788,12 @@ progress {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: none;
+  /* Looks very thin and awful */
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* It is the default and looks bolder */
+  -webkit-font-smoothing: antialiased;
+  /* Looks pretty much the same than Windows */
   font-size: 18px;
   color: #000; }
 

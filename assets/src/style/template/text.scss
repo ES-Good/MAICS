@@ -1,5 +1,8 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: none; /* Looks very thin and awful */
+    -webkit-font-smoothing: subpixel-antialiased; /* It is the default and looks bolder */
+    -webkit-font-smoothing: antialiased; /* Looks pretty much the same than Windows */
     font-size: 18px;
     color: #000;
 }
